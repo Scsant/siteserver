@@ -4,7 +4,8 @@ import bodyParser from "body-parser";
 import dotenv from "dotenv";
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import mongoose from "mongoose";
-import Interaction from "../models/Interaction.js";
+import Interaction from "./models/interaction.js";
+
 
 dotenv.config();
 
