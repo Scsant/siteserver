@@ -53,6 +53,11 @@ app.post("/chat", async (req, res) => {
   }
 });
 
+app.get("/", (req, res) => {
+  res.send("🔥 API está rodando! Acesse /chat via POST.");
+});
+
+
 // 🔥 Servidor rodando
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`🔥 Servidor rodando na porta ${PORT}`));
